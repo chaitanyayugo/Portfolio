@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
-const repo = process.env.NEXT_PUBLIC_REPO_NAME || "chaitanya-portfolio";
+const repo = process.env.NEXT_PUBLIC_REPO_NAME || "Portfolio";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/Portfolio",
+  basePath: `/${repo}`,
+  trailingSlash: true,
   images: { unoptimized: true }
 };
 
