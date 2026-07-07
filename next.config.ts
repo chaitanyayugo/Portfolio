@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/Portfolio",
+  basePath: "Portfolio",
   trailingSlash: true,
   images: { unoptimized: true }
 };
